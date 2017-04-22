@@ -21,11 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="countdownDate">Count down date</label>
-                <div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-                    <input class="span2" size="16" type="text" value="12-02-2012">
-                    <span class="add-on"><i class="icon-remove"></i></span>
-                    <span class="add-on"><i class="icon-th"></i></span>
-                </div>
+                <input id="countdownDate" type="text" name="countdownDate" class="form-control">
             </div>
         </form>
     </div>
@@ -34,7 +30,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./lib/datimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript">
-$('#datimepicker').datetimepicker();
+$('#countdownDate').datetimepicker({});
 </script>
-
 </html>
