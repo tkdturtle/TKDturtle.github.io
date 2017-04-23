@@ -37,6 +37,20 @@ $('#countdownDate').datetimepicker({});
 
 $('#newTimer').submit(function(event) {
     event.preventDefault();
+
+    var timerName = $('#timerName').val();
+    var countdownDate = $('#countdownDate').val();
+
+
+    if (!timerName) {
+        alert('You need a timer name.');
+        return;
+    }
+
+    if (!countdownDate) {
+        alert('You need a count down date.');
+        return;
+    }
 });
 </script>
 
